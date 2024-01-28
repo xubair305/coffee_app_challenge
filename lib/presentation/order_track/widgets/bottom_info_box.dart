@@ -41,100 +41,112 @@ class BottomInfoBox extends StatelessWidget {
                 ],
               ),
               const Gap(20),
-              Row(
-                children: [
-                  _buildProgressBar(),
-                  const Gap(8),
-                  _buildProgressBar(),
-                  const Gap(8),
-                  _buildProgressBar(),
-                  const Gap(8),
-                  _buildProgressBar(isActive: false),
-                ],
-              ),
+              _buildOrderProgress(),
               const Gap(12),
-              Container(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 8,
-                  vertical: 8,
-                ),
-                decoration: BoxDecoration(
-                  border: Border.all(color: const Color(0xFFEAEAEA)),
-                  borderRadius: BorderRadius.circular(kBorderRadius),
-                ),
-                child: Row(
-                  children: [
-                    Image.asset(AssetsPath.scooter, scale: 4),
-                    const Gap(12),
-                    const Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          CustomText('Delivered your order'),
-                          CustomText(
-                            'We deliver your goods to you in the shortes possible time.',
-                            styleType: StyleType.heading3,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              _buildDeliveryStatusBox(),
               const Gap(20),
-              Row(
-                children: [
-                  Container(
-                    height: 54,
-                    width: 54,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      image: const DecorationImage(
-                        image: AssetImage(AssetsPath.avatarImg),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                  const Gap(12),
-                  const Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        CustomText(
-                          'Johan Hawn',
-                          styleType: StyleType.heading2,
-                        ),
-                        Gap(8),
-                        CustomText(
-                          'Personal Courier',
-                          styleType: StyleType.heading3,
-                        ),
-                      ],
-                    ),
-                  ),
-                  Bouncing(
-                    onTap: () => context.showMaterialSnackBar(
-                      'User tapped on Call button...',
-                    ),
-                    child: Container(
-                      padding: const EdgeInsets.all(12),
-                      decoration: BoxDecoration(
-                        border: Border.all(color: const Color(0xFFDEDEDE)),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Image.asset(
-                        AssetsPath.phoneIcon,
-                        scale: 4,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              _buildCallButtonTile(context),
               const Gap(20),
             ],
           ),
         ),
       ),
+    );
+  }
+
+  Widget _buildOrderProgress() {
+    return Row(
+      children: [
+        _buildProgressBar(),
+        const Gap(8),
+        _buildProgressBar(),
+        const Gap(8),
+        _buildProgressBar(),
+        const Gap(8),
+        _buildProgressBar(isActive: false),
+      ],
+    );
+  }
+
+  Widget _buildDeliveryStatusBox() {
+    return Container(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 8,
+        vertical: 8,
+      ),
+      decoration: BoxDecoration(
+        border: Border.all(color: const Color(0xFFEAEAEA)),
+        borderRadius: BorderRadius.circular(kBorderRadius),
+      ),
+      child: Row(
+        children: [
+          Image.asset(AssetsPath.scooter, scale: 4),
+          const Gap(12),
+          const Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                CustomText('Delivered your order'),
+                CustomText(
+                  'We deliver your goods to you in the shortes possible time.',
+                  styleType: StyleType.heading3,
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildCallButtonTile(BuildContext context) {
+    return Row(
+      children: [
+        Container(
+          height: 54,
+          width: 54,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(12),
+            image: const DecorationImage(
+              image: AssetImage(AssetsPath.avatarImg),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+        const Gap(12),
+        const Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              CustomText(
+                'Johan Hawn',
+                styleType: StyleType.heading2,
+              ),
+              Gap(8),
+              CustomText(
+                'Personal Courier',
+                styleType: StyleType.heading3,
+              ),
+            ],
+          ),
+        ),
+        Bouncing(
+          onTap: () => context.showMaterialSnackBar(
+            'User tapped on Call button...',
+          ),
+          child: Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              border: Border.all(color: const Color(0xFFDEDEDE)),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Image.asset(
+              AssetsPath.phoneIcon,
+              scale: 4,
+            ),
+          ),
+        ),
+      ],
     );
   }
 
