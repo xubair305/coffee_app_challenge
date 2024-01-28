@@ -1,6 +1,7 @@
 import 'package:coffee_challenge/app_exports.dart';
 import 'package:coffee_challenge/components/index.dart';
 import 'package:coffee_challenge/core/helper/index.dart';
+import 'package:coffee_challenge/l10n/l10n.dart';
 import 'package:coffee_challenge/presentation/favorites/cubit/favorites_cubit.dart';
 import 'package:coffee_challenge/presentation/favorites/widget/favorite_coffee_tile.dart';
 import 'package:coffee_challenge/presentation/home/model/coffee_item_model.dart';
@@ -23,7 +24,7 @@ class FavoritesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Favorites')),
+      appBar: AppBar(title: Text(context.l10n.favoritesText)),
       body: BlocConsumer<FavoritesCubit, FavoritesState>(
         listener: (_, state) {
           if (state is FavoritesRemoved) {

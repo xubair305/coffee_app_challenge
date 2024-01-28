@@ -1,6 +1,6 @@
-
 import 'package:coffee_challenge/app_exports.dart';
 import 'package:coffee_challenge/core/theme/app_colors.dart';
+import 'package:coffee_challenge/l10n/l10n.dart';
 import 'package:expandable_text/expandable_text.dart';
 
 class ReadMoreTextWidget extends StatelessWidget {
@@ -15,8 +15,8 @@ class ReadMoreTextWidget extends StatelessWidget {
     return ExpandableText(
       text,
       maxLines: 3,
-      expandText: 'Read more',
-      collapseText: 'Read less',
+      expandText: context.l10n.readMoreText,
+      collapseText: context.l10n.readLessText,
       animation: true,
       style: TextStyle(
         color: const Color(0xFF9B9B9B),

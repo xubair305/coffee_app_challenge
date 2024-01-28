@@ -1,41 +1,4 @@
-
 import 'package:coffee_challenge/core/helper/assets_path.dart';
-
-List<String> _images = [
-  AssetsPath.coffeeOne,
-  AssetsPath.coffeeTwo,
-  AssetsPath.coffeeThree,
-  AssetsPath.coffeeFour,
-  AssetsPath.coffeeFive,
-  AssetsPath.coffeeSix,
-  AssetsPath.coffeeSeven,
-  AssetsPath.coffeeEight,
-];
-
-List<String> _coffeeName = [
-  'Espresso',
-  'Latte',
-  'Cappuccino',
-  'Americano',
-  'Macchiato',
-];
-
-List<String> _subTitles = [
-  'Strong & Concentrated',
-  'Diluted Espresso',
-  'Espresso with Milk',
-  'Equal Parts Milk',
-  'Strong Flavor',
-  'Chocolate & Espresso',
-  'Coffee-to-Milk',
-  'over Ice Cream',
-  'Less Acidic',
-  'Chilled Brew',
-  'Ground & Water',
-  'Grounds with Press',
-  'Quick & Smooth Brew',
-  'Precision in Brewing',
-];
 
 String descriptionConst =
     'A cappuccino is an approximately 150 ml (5 oz) beverage, with 25 ml of espresso coffee and 85ml of fresh milk the fo. A cappuccino is an approximately 150 ml (5 oz) beverage, with 25 ml of espresso coffee and 85ml of fresh milk the fo.';
@@ -62,23 +25,7 @@ class CoffeeItem {
       price: json['price'].toString(),
     );
   }
-  // factory CoffeeItem.random() {
-  //   final random = Random();
-  //   final title = _coffeeName[random.nextInt(_coffeeName.length)];
-  //   final subTitle = _subTitles[random.nextInt(_subTitles.length)];
-  //   final price = ((random.nextDouble() * 10) + 3).toStringAsFixed(2);
-  //   final image = _images[random.nextInt(_images.length)];
-  //   final rating = (random.nextDouble() * 5).toStringAsFixed(1);
 
-  //   return CoffeeItem(
-  //     title: title,
-  //     subTitle: subTitle,
-  //     description: descriptionConst,
-  //     rating: rating,
-  //     image: image,
-  //     price: '\$$price',
-  //   );
-  // }
   final int id;
   final String title;
   final String subTitle;
@@ -102,10 +49,6 @@ class CoffeeItem {
 }
 
 class CoffeeShop {
-  // static List<CoffeeItem> generateDummyItems(int count) {
-  //   return List.generate(count, (_) => CoffeeItem.random());
-  // }
-
   static List<CoffeeItem> get coffeeItems {
     final coffeeItems = <CoffeeItem>[
       CoffeeItem(

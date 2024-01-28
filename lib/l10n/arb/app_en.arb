@@ -10,14 +10,16 @@
   "descriptionText": "Description",
   "detailText": "Detail",
   "editAddressText": "Edit Address",
+  "favoritesText": "Favorites",
   "locationText": "Location",
   "orderText": "Order",
   "paymentSummary": "Payment Summary",
   "pickUpText": "Pick Up",
   "priceText": "Price",
-  "promoText": "Promo",
+  "readLessText": "Read less",
+  "readMoreText": "Read more",
   "serachFieldHintText": "Search Coffee",
   "sizeText": "Size",
-  "somethingWrong": "Something went wrong!",
+  "somethingWrong": "Something went wrong.",
   "totalPaymentText": "Total Payment"
 }

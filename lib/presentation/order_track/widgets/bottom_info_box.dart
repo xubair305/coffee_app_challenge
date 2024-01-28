@@ -1,6 +1,5 @@
 import 'package:coffee_challenge/app_exports.dart';
 import 'package:coffee_challenge/components/index.dart';
-import 'package:coffee_challenge/core/helper/bouncing_button.dart';
 import 'package:coffee_challenge/core/helper/index.dart';
 
 class BottomInfoBox extends StatelessWidget {

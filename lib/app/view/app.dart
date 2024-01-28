@@ -19,6 +19,8 @@ class App extends StatelessWidget {
           child: MaterialApp.router(
             localizationsDelegates: AppLocalizations.localizationsDelegates,
             supportedLocales: AppLocalizations.supportedLocales,
+            // ==== Uncomment below line to change localization to Spanish =====
+            // locale: const Locale('es'),
             theme: ThemeData(
               textTheme: ThemeData.light().textTheme.apply(fontFamily: 'Sora'),
               primaryColor: AppColors.appBrown,

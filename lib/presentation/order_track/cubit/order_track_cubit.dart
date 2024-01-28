@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:coffee_challenge/core/helper/const_methods.dart';
 import 'package:coffee_challenge/core/helper/index.dart';
 import 'package:coffee_challenge/core/utils/app_logger.dart';
 import 'package:coffee_challenge/repositories/geoloaction/geolocation_repository.dart';

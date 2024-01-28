@@ -1,7 +1,6 @@
 import 'package:coffee_challenge/app/router/routes_path.dart';
 import 'package:coffee_challenge/app_exports.dart';
 import 'package:coffee_challenge/components/index.dart';
-import 'package:coffee_challenge/core/helper/bouncing_button.dart';
 import 'package:coffee_challenge/core/helper/index.dart';
 import 'package:coffee_challenge/core/theme/app_colors.dart';
 import 'package:coffee_challenge/l10n/l10n.dart';

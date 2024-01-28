@@ -32,7 +32,7 @@ class DashboardView extends StatelessWidget {
             case BottomNavBarItem.home:
               return const HomePage();
             case BottomNavBarItem.favorites:
-              return  FavoritesPage();
+              return  const FavoritesPage();
             case BottomNavBarItem.cart:
               return const CartPage();
             case BottomNavBarItem.notification:
