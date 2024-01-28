@@ -10,6 +10,7 @@ class AssetsPath {
   static const searchIcon = 'assets/icons/search-lens.png';
   static const filterIcon = 'assets/icons/filter.png';
   static const heartOutline = 'assets/icons/heart-outline.png';
+  static const phoneIcon = 'assets/icons/phone.png';
   static const beansIcon = 'assets/icons/beans.png';
   static const milkIcon = 'assets/icons/milk.png';
   static const penIcon = 'assets/icons/pen.png';

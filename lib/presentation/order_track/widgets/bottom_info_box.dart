@@ -122,9 +122,9 @@ class BottomInfoBox extends StatelessWidget {
                         border: Border.all(color: const Color(0xFFDEDEDE)),
                         borderRadius: BorderRadius.circular(12),
                       ),
-                      child: const Icon(
-                        Icons.call_rounded,
-                        color: Color(0xFF808080),
+                      child: Image.asset(
+                        AssetsPath.phoneIcon,
+                        scale: 4,
                       ),
                     ),
                   ),
@@ -137,7 +137,8 @@ class BottomInfoBox extends StatelessWidget {
       ),
     );
   }
-    Expanded _buildProgressBar({bool isActive = true}) {
+
+  Expanded _buildProgressBar({bool isActive = true}) {
     return Expanded(
       child: Container(
         height: 4,
