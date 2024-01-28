@@ -1,0 +1,69 @@
+name: coffee_challenge
+description: A Very Good Project created by Very Good CLI.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  animate_do: ^3.3.0
+  bloc: ^8.1.2
+  cupertino_icons: ^1.0.6
+  expandable_text: ^2.3.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.3
+  flutter_dotenv: ^5.1.0
+  flutter_localizations:
+    sdk: flutter
+  flutter_polyline_points: ^2.0.0
+  flutter_screenutil: ^5.9.0
+  gap: ^3.0.1
+  geolocator: ^10.1.0
+  go_router: ^13.0.1
+  google_maps_flutter: ^2.5.3
+  http: ^1.2.0
+  intl: ^0.18.0
+  like_button: ^2.0.5
+  logger: ^2.0.2+1
+  meta: ^1.10.0
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  bloc_test: ^9.1.2
+  flutter_test:
+    sdk: flutter
+  mocktail: ^0.3.0
+  very_good_analysis: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/img/
+    - assets/icons/
+    - dev.env
+    - production.env
+
+  fonts:
+    - family: Sora
+      fonts:
+        - asset: assets/fonts/Sora-Regular.ttf
+        - asset: assets/fonts/Sora-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Sora-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Sora-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Sora-Regular.ttf
+          weight: 500
+        - asset: assets/fonts/Sora-Medium.ttf
+          weight: 400
+        - asset: assets/fonts/Sora-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Sora-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Sora-Thin.ttf
+          weight: 100

@@ -1,0 +1,23 @@
+{
+  "@@locale": "en",
+  "addNoteText": "Add Note",
+  "appName": "Bean Buzz",
+  "buyNow": "Buy Now",
+  "cashText": "Cash",
+  "deliverText": "Deliver",
+  "deliveryAddText": "Delivery Address",
+  "deliveryFeeText": "Delivery Fee",
+  "descriptionText": "Description",
+  "detailText": "Detail",
+  "editAddressText": "Edit Address",
+  "locationText": "Location",
+  "orderText": "Order",
+  "paymentSummary": "Payment Summary",
+  "pickUpText": "Pick Up",
+  "priceText": "Price",
+  "promoText": "Promo",
+  "serachFieldHintText": "Search Coffee",
+  "sizeText": "Size",
+  "somethingWrong": "Something went wrong!",
+  "totalPaymentText": "Total Payment"
+}
