@@ -1,5 +1,7 @@
 # Coffee Challenge
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/xubair305)
+
 This project contains 3 flavors:
 
 - development
